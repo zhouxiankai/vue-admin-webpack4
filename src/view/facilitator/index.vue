@@ -8,6 +8,11 @@
     <el-button size="mini" @click="changeKey">ClickMe!</el-button>
     <el-input-number v-model="num" :min="1" :max="10"></el-input-number>
     <c-dialog :visible.sync="visible"  width="800px" title="测试" @open="openHandle"></c-dialog>
+    <el-table :data="list" small>
+      <el-table-column label="姓名" prop="name"></el-table-column>
+      <el-table-column label="年龄" prop="age"></el-table-column>
+      <el-table-column label="住址" prop="address"></el-table-column>
+    </el-table>
   </div>
 </template>
 
@@ -23,19 +28,17 @@ export default {
       childrenKey: 1,
       inputValue: '等等',
       visible: false,
-      num: 4
+      num: 4,
+      list: [
+        { name: 'jerry', age: 18, address: '温州' }, { name: 'tom', age: 22, address: '杭州' }, { name: 'mary', age: 20, address: '上海' }
+      ]
     }
   },
   components: {
     testChildren, cDialog
   },
   created () {
-    const a = 1
-    // const res = await import('@/lib/utils.js')
-    const arr = [1, 2, 3]
-    arr[0] = 2
-    console.log(arr)
-    // this.test(arr)
+
   },
   methods: {
     a (val) {
