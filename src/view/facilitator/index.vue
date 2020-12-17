@@ -13,6 +13,13 @@
       <el-table-column label="年龄" prop="age"></el-table-column>
       <el-table-column label="住址" prop="address"></el-table-column>
     </el-table>
+    <el-pagination
+      class="mt-60"
+      align="center"
+      background
+      layout="prev, pager, next"
+      :total="1000">
+    </el-pagination>
   </div>
 </template>
 
@@ -78,6 +85,8 @@ export default {
 
 <style lang="less" scoped>
 .faclitator-index{
-
+  .mt-60{
+    margin-top:60px;
+  }
 }
 </style>
