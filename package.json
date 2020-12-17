@@ -1,0 +1,78 @@
+{
+  "name": "vue-ele-webpack4",
+  "version": "1.0.0",
+  "description": "admin project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --config build/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production node build/webpack.pro.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyz": "cross-env NODE_ENV=production npm_config_report=true npm run build",
+    "new:view": "node ./scripts/generateView"
+  },
+  "author": "zhouxk",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "chalk": "^4.1.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "cross-env": "^5.2.1",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.3",
+    "webpack-bundle-analyzer": "^3.5.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "echarts": "^4.2.1",
+    "element-ui": "^2.12.0",
+    "qs": "^6.9.1",
+    "url-template": "^2.0.8",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.0.1"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-2"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "enough",
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+}
