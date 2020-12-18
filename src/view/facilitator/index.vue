@@ -45,7 +45,7 @@ export default {
     testChildren, cDialog
   },
   created () {
-
+    console.log('test-1')
   },
   methods: {
     a (val) {
