@@ -45,7 +45,7 @@ export default {
     testChildren, cDialog
   },
   created () {
-
+    console.log('revert-1')
   },
   methods: {
     a (val) {
