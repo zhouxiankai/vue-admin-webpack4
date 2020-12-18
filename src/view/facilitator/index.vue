@@ -46,6 +46,7 @@ export default {
   },
   created () {
     console.log('test-1')
+    console.log('test-2')
   },
   methods: {
     a (val) {
